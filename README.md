@@ -7,29 +7,32 @@ Before you start, ensure you have the following:
 ## Getting Started
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/swisstronik-smart-contract-example.git
+   git clone https://github.com/UmarFarooq361/Swisstronic-Project-getStorage.git
    ```
 2. Install project dependencies:
 
    ```
    npm install
    ```
+   Make sure you have installed SwisstronikJS by running
+   ```
+   npm i @swisstronik/swisstronik.js
+   ```
+4. Configure `hardhat.config.js`:
 
-3. Configure `hardhat.config.js`:
+   Open the `hardhat.config.js` file and configure the Swisstronik network with your JSON-RPC endpoint URL  https://json-rpc.testnet.swisstronik.com/ and Ethereum account private key.
 
-   Open the `hardhat.config.js` file and configure the Swisstronik network with your JSON-RPC endpoint URL and an Ethereum account private key.
-
-4. Write and Compile Smart Contract:
+5. Write and Compile Smart Contract:
    - Compile the smart contract by running:
      ```
      npx hardhat compile
      ```
-5. Deploy Smart Contract:
+6. Deploy Smart Contract:
    - Deploy the contract by running:
      ```
      npx hardhat run scripts/deploy.js --network swisstronik
      ```
-6. Interact with Smart Contract:
+7. Interact with Smart Contract:
    - Run the setMessage scripts to interact with the contract.
      ```
      npx hardhat run scripts/setMessage.js --network swisstronik
@@ -43,5 +46,3 @@ Before you start, ensure you have the following:
      npx hardhat run scripts/getStorage.js --network swisstronik
      ```
 
-
-```
